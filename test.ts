@@ -72,3 +72,20 @@ function getSam(a:number | number[]) {
 
 const x: undefined = undefined
 const z: null = null;
+
+let t: 'test' = 'test';
+
+type actionType = 'up' | 'down';
+
+function performAcion(action: actionType| ComplexAction) {
+    switch(action) {
+        case 'down':
+            return -1;
+        case 'up':
+            return 1;
+    }
+}
+
+interface ComplexAction {
+    s: string;
+}
