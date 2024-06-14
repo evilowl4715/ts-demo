@@ -20,7 +20,39 @@ const test3 = (a:number):void => {
 
 d = d.map((x: string) => x.toLowerCase())
 
-function countCoord(coord: {lat: number, lon?: number}) {
+type Point = {
+    x: number,
+    y: number
+};
+
+type D3Point = Point & {
+    z: number
+}
+
+type stringOrNumber = string | number;
+
+const f = (point: IPoint) => {
+    const d: I3DPoint = point as I3DPoint
+}
+
+interface IPoint {
+    x: number,
+    y: number
+};
+
+interface IPoint {
+    d:number
+};
+
+interface I3DPoint extends IPoint {
+    z:number
+}
+
+function countCoord(coord: Point) {
+
+}
+
+function countCoordI(coord: IPoint) {
 
 }
 
