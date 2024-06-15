@@ -92,3 +92,12 @@ interface ComplexAction {
 
 const tump: [number, string, number] = [0, 'a', 1];
 
+
+
+function logTime<T>(num: T): T {
+    console.log(new Date());
+    return num;
+}
+
+logTime<string>('efef')
+logTime<number>(22)
