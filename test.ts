@@ -101,3 +101,5 @@ function logTime<T>(num: T): T {
 
 logTime<string>('efef')
 logTime<number>(22)
+
+
