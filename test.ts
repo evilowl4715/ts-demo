@@ -89,3 +89,6 @@ function performAcion(action: actionType| ComplexAction) {
 interface ComplexAction {
     s: string;
 }
+
+const tump: [number, string, number] = [0, 'a', 1];
+
